@@ -3,7 +3,7 @@ import pymysql
 web = Flask(__name__)
 def consultar(sql, datos=()):
     # abre la conexion, ejecuta el select y devuelve las filas
-    con = pymysql.connect(host="localhost", user="root", password="MiClave2026",
+    con = pymysql.connect(host="localhost", user="root", password="",
    database="zomato_restaurante",
   cursorclass=pymysql.cursors.DictCursor)
     cur = con.cursor()
